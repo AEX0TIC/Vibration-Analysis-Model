@@ -41,7 +41,9 @@ end_timestamp = pd.Timestamp('2024-06-25 05:05:00')
 
 # Load the dataset from an Excel file directly
 file_path = "Motor_Data"
-df = pd.read_excel(file_path)
+df = pd.read_excel(r"D:\VsCodeProjects\SINTER Graphs\Motor_Data.xlsx")
+
+# || Just change the file path in df = pd.read_excel("") whenever using it to run the project smoothly ||
 
 # Create Dash app
 app = Dash(__name__)
